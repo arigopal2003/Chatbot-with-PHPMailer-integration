@@ -44,20 +44,20 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com'; 
     $mail->SMTPAuth = true;
-    $mail->Username = 'seyaenquiry@gmail.com';
-    $mail->Password = 'sgab qfpu ovyi arzl'; // Your app password
+    $mail->Username = 'abc@gmail.com';
+    $mail->Password = '1234 5678 4321'; // Your app password
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
-    $mail->setFrom('seyaenquiry@gmail.com', 'Chatbot Enquiry');
-    $mail->addAddress('seyaenquiry@gmail.com');
+    $mail->setFrom('abc@gmail.com', 'Chatbot Enquiry');
+    $mail->addAddress('abc@gmail.com');
 
     $mail->isHTML(true);
-    $mail->Subject = 'Seyasoft Chatbot Enquiry';
+    $mail->Subject = 'Chatbot Enquiry';
 
     // Construct email body with all fields
     $mailBody = "
-        <h2>Seyasoft Chatbot Enquiry</h2>
+        <h2>Chatbot Enquiry</h2>
         <p><strong>Name:</strong> {$name}</p>
         <p><strong>Phone:</strong> {$phone}</p>
         <p><strong>Email:</strong> {$email}</p>
